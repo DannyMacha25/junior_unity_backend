@@ -1,0 +1,8 @@
+<launch>
+	<node 
+		pkg = "junior_unity_backend"
+	 	type = "robot_position_node"
+		name = "robot_position_node"
+		output = "screen"
+	/>
+</launch>
