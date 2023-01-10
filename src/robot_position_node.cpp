@@ -17,7 +17,7 @@ int main(int argc, char** argv){
 	while (nh.ok()){
 		tf::StampedTransform transform;
 		try{
-			listener.lookupTransform("/base_link","/map",ros::Time(0),transform);
+			listener.lookupTransform("/map","/base_link",ros::Time(0),transform);
 		}
 		catch(tf::TransformException &ex){
 			ROS_ERROR("%s",ex.what());
